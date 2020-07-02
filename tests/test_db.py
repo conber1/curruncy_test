@@ -2,7 +2,6 @@ from aiohttp.test_utils import AioHTTPTestCase, unittest_run_loop
 import aiohttp
 from handlers.db import insert_record
 import aioredis
-import socket
 import asyncio
 
 
