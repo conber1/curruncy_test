@@ -40,5 +40,5 @@ python -m unittest tests/test_db.py
     For example: POST json={"EUR": "100", "GRIVNA": "200"}  http://0.0.0.0:8080/database?merge=1
     For zeroing all data use POST request without body_json like: http://0.0.0.0:8080/database?merge=0
     
- Before you start you should to fill with data the redis database by differenr currencies.
+ Before you start you should to fill with data the redis database by different currencies.
     
