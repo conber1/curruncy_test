@@ -5,6 +5,7 @@ import aioredi
 import asyncio
 import json
 
+
 class TestConverter(AioHTTPTestCase):
 
     async def get_application(self):
