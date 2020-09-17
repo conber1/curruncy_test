@@ -3,8 +3,10 @@ import asyncio
 import aioredis
 import json
 
+
 CURRENCIES = dict() #empty dictionary
 ZERO = "0" #constant with ZERO value 
+
 
 async def insert_record(request, CURRENCIES=dict()): #coroutine for inserting data to database
     redis = await aioredis.create_redis_pool("redis://db") #connect wit redis
@@ -31,6 +33,3 @@ async def insert_record(request, CURRENCIES=dict()): #coroutine for inserting da
     redis.close()
     await redis.wait_closed()
     return web.Response(text="Data successfully added!", status=200)
-
-
-
