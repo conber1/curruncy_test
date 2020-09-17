@@ -5,7 +5,6 @@ import aioredis
 import asyncio
 
 
-
 class TestDB(AioHTTPTestCase):
 
     async def get_application(self):
@@ -25,7 +24,3 @@ class TestDB(AioHTTPTestCase):
         assert await redis.get("EUR", encoding="utf-8") == "60"
         redis.close()
         await redis.wait_closed()
-
-
-    
-
